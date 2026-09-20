@@ -1,0 +1,17 @@
+<p>employee-list works!</p>
+<table class="table" [width]="400">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (item of Employee; track $index) {
+      <tr>
+        <td>{{ item.name }}</td>
+        <td>{{ item.age }}</td>
+      </tr>
+    }
+  </tbody>
+</table>

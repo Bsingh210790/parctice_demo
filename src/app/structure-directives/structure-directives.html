@@ -1,0 +1,58 @@
+
+
+<!-- <h1 *ngIf="display; else elsepart">barun kumar singh</h1>
+<ng-template #elsepart>
+    <h1>Arun Kumar Singh</h1>
+</ng-template> -->
+<!-- <div *ngIf="display; then Ifpart;else elsepart;">
+
+</div>
+<ng-template #Ifpart>
+    <h1>barun kumar singh</h1>
+</ng-template>
+<ng-template #elsepart>
+    <h1>Arun Kumar Singh</h1>
+</ng-template> -->
+
+
+<!-- @switch (pizza) {
+
+  @case ('fijita') {
+    <div>Your selected Fijita Pizza</div>
+  }
+
+  @case ('Tikka') {
+    <div>Your selected Tikka Pizza</div>
+  }
+
+  @case ('supreme') {
+    <div>Your selected Supreme Pizza</div>
+  }
+
+  @case ('Creamy') {
+    <div>Your selected Creamy Pizza</div>
+  }
+
+  @default {
+    <div>Please select a valid pizza</div>
+  }
+} -->
+  <!-- @for (item of furtes; track item) {
+    <h1>{{$index}}{{item}}</h1>
+  }
+   @for (item of furtes; track item) {
+    <h1>{{$count}}{{item}}</h1>
+  } -->
+    <ul>
+    @for (p of person; track $index) {
+      
+      <li >{{p.name}}</li>
+      <li>{{p.age}}</li>
+      <ul>
+        @for (item of p.hobies; track $index) {
+          <li class="bg-primary">{{item}}</li>
+        }
+      </ul>
+      <br>
+    }
+    </ul>
