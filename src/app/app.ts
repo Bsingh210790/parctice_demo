@@ -53,7 +53,7 @@ export class App {
 constructor(private post: Post){}
 ngOnInit(){
   this.post.getpost().subscribe(response=>{
-this._post=response;
+     this._post=response ;
   })
 }  
 }
