@@ -7,14 +7,14 @@ import { Component } from '@angular/core';
   styleUrl: './class-binding.css',
 })
 export class ClassBinding {
-  public mycssClass="myColour myWriting";
+  public mycssClass="myColour myWriting1";
   public condition=false;
   myCall(){
     if(this.condition==true){
        return "myColour";
     }
     else{
-      return "myWriting";
+      return "myWriting1";
     }
     
   }
