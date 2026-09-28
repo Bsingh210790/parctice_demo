@@ -11,6 +11,6 @@ export class Child {
 @Output() public childEvent=new EventEmitter();
 
 fireEvent(){
-  this.childEvent.emit("barun12155")
+  this.childEvent.emit("barun1215")
 }
 }
